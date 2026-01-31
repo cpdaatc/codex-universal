@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج اعتماد المتدربين الصحيين</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: #f0f2f5;
+      font-family: 'Amiri', 'Scheherazade New', serif;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 3rem;
+      background: #fff;
+      border: 1px solid #d7d7d7;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      padding: 35mm 25mm 30mm;
+      position: relative;
+    }
+
+    .page::after {
+      content: "";
+      position: absolute;
+      inset: 10mm;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      pointer-events: none;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 25mm;
+    }
+
+    header .emblem {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 10px;
+      border: 2px solid #2f6f4f;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      color: #2f6f4f;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 2px 0;
+      font-size: 15px;
+    }
+
+    .flowchart {
+      display: grid;
+      gap: 18px;
+    }
+
+    .flow-step,
+    .decision {
+      border: 1px solid #5d8d7d;
+      padding: 15px 20px;
+      border-radius: 12px;
+      position: relative;
+      background: rgba(95, 157, 134, 0.06);
+      font-size: 16px;
+    }
+
+    .flow-step::before,
+    .decision::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #5d8d7d;
+      border-left: none;
+      border-top: none;
+      transform: rotate(-45deg);
+      bottom: -17px;
+      right: 50%;
+      translate: 50% 0;
+      background: #fff;
+    }
+
+    .flow-step:last-child::before,
+    .decision:last-child::before {
+      display: none;
+    }
+
+    .note {
+      margin-top: 20px;
+      padding: 12px 16px;
+      border: 1px dashed #999;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.02);
+      font-size: 15px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 15px;
+    }
+
+    table th,
+    table td {
+      border: 1px solid #777;
+      padding: 10px;
+      text-align: center;
+    }
+
+    table thead {
+      background: rgba(46, 123, 96, 0.12);
+      font-weight: 700;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 24px;
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    .form-field {
+      border-bottom: 1px solid #555;
+      padding-bottom: 6px;
+      min-height: 34px;
+    }
+
+    .form-field span {
+      display: inline-block;
+      font-weight: 700;
+      margin-left: 8px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    ol {
+      padding-right: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    ol li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 25mm;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <section class="page">
+    <header>
+      <div class="emblem">شعار</div>
+      <p>المملكة العربية السعودية</p>
+      <p>وزارة التعليم العالي &bull; وزارة الصحة</p>
+      <h1>مسار إجراءات الاعتماد الصحي للمتدربين (الأطباء)</h1>
+      <p>بالشراكة بين الإدارة العامة للتدريب والابتعاث بوزارة الصحة والملحقيات الثقافية</p>
+    </header>
+
+    <div class="flowchart">
+      <div class="flow-step">يتواصل المتدرب مع جهة التدريب للحصول على قبول مبدئي في البرنامج الصحي.</div>
+      <div class="flow-step">يُزود المتدرب الإدارة العامة للتدريب والابتعاث بصورة القبول وخطة البرنامج المقترحة.</div>
+      <div class="decision">تقوم الإدارة بدراسة الطلب والتأكد من مطابقة شروط الابتعاث والتخصص الدقيق.</div>
+      <div class="flow-step">في حال استيفاء الشروط يُرفع الطلب إلى لجنة التدريب والابتعاث لإصدار قرار الموافقة.</div>
+      <div class="flow-step">بعد صدور قرار الابتعاث يتم تزويد الملحقية الثقافية بالموافقة الرسمية لمخاطبة جهة التدريب.</div>
+      <div class="flow-step">تصدر جهة التدريب خطاب الاعتماد النهائي ويُحفظ في ملف المتدرب لاستكمال الإجراءات.</div>
+    </div>
+
+    <div class="note">
+      ملاحظة: على المتدرب متابعة تحديث ملفه لدى الملحقية الثقافية بشكل دوري، وإرفاق أي مستندات إضافية تطلبها لجنة التدريب والابتعاث.
+    </div>
+
+    <footer>
+      يعتمد هذا المسار على الإجراءات الرسمية المعتمدة بوزارة الصحة، ويمكن تكييفه وفق المتطلبات الخاصة بكل ملحقية ثقافية.
+    </footer>
+  </section>
+
+  <section class="page">
+    <header>
+      <div class="emblem">شعار</div>
+      <p>المملكة العربية السعودية</p>
+      <p>وزارة الصحة &bull; الإدارة العامة للتدريب والابتعاث</p>
+      <h1>مرحلة (5): مستند متابعة المتدربين في برامج الاعتماد</h1>
+    </header>
+
+    <h2>سجل المتدربين المعتمدين</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>م</th>
+          <th>اسم المتدرب</th>
+          <th>التخصص الدقيق</th>
+          <th>جهة التدريب</th>
+          <th>تاريخ بداية البرنامج</th>
+          <th>تاريخ نهاية البرنامج</th>
+          <th>ملاحظات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      يحفظ هذا السجل لدى لجنة التدريب والابتعاث لمراجعة الموقف الأكاديمي لكل متدرب معتمد ضمن برامج الاعتماد الصحي.
+    </footer>
+  </section>
+
+  <section class="page">
+    <header>
+      <div class="emblem">شعار</div>
+      <p>المملكة العربية السعودية</p>
+      <p>وزارة الصحة &bull; الإدارة العامة للتدريب والابتعاث</p>
+      <h1>طلب موافقة للمباشرة بأعمال الاعتماد الصحي</h1>
+    </header>
+
+    <div class="form-grid">
+      <div class="form-field"><span>اسم المتقدم:</span></div>
+      <div class="form-field"><span>الرقم الوظيفي:</span></div>
+      <div class="form-field"><span>رقم الهوية / الإقامة:</span></div>
+      <div class="form-field"><span>الجهة التابع لها:</span></div>
+      <div class="form-field"><span>التخصص العام:</span></div>
+      <div class="form-field"><span>التخصص الدقيق:</span></div>
+      <div class="form-field"><span>جهة التدريب:</span></div>
+      <div class="form-field"><span>مدة البرنامج:</span></div>
+      <div class="form-field"><span>تاريخ البداية:</span></div>
+      <div class="form-field"><span>تاريخ النهاية:</span></div>
+      <div class="form-field"><span>البريد الإلكتروني:</span></div>
+      <div class="form-field"><span>رقم التواصل:</span></div>
+    </div>
+
+    <div class="section-title">إقرار المتقدم</div>
+    <p>أقر بصحة البيانات أعلاه، والتزامي بالتعليمات واللوائح المنظمة لبرامج الاعتماد الصحي داخل المملكة وخارجها.</p>
+
+    <div class="form-grid">
+      <div class="form-field"><span>اسم المتقدم:</span></div>
+      <div class="form-field"><span>التوقيع:</span></div>
+      <div class="form-field"><span>التاريخ:</span></div>
+      <div class="form-field"><span>جهة العمل:</span></div>
+    </div>
+
+    <div class="section-title">اعتماد جهة العمل</div>
+    <p>بعد مراجعة بيانات المتقدم أعلاه، نوافق على مباشرته لأعمال الاعتماد الصحي وفق اللوائح المنظمة.</p>
+
+    <div class="form-grid">
+      <div class="form-field"><span>اسم المسؤول:</span></div>
+      <div class="form-field"><span>المسمى الوظيفي:</span></div>
+      <div class="form-field"><span>التوقيع:</span></div>
+      <div class="form-field"><span>الختم:</span></div>
+    </div>
+
+    <footer>
+      ترسل نسخة من هذا النموذج إلى الإدارة العامة للتدريب والابتعاث، مع إرفاق المستندات الداعمة لطلب الاعتماد.
+    </footer>
+  </section>
+
+  <section class="page">
+    <header>
+      <div class="emblem">شعار</div>
+      <p>المملكة العربية السعودية</p>
+      <p>وزارة الصحة &bull; وكالة التدريب والابتعاث</p>
+      <h1>توجيهات وإرشادات الاعتماد الصحي</h1>
+    </header>
+
+    <div class="section-title">أولاً: إجراءات ما قبل البدء</div>
+    <ol>
+      <li>التأكد من أن البرنامج التدريبي معتمد من الجهة المهنية المختصة داخل الدولة المضيفة.</li>
+      <li>رفع جميع المستندات المطلوبة عبر البوابة الإلكترونية ومتابعة حالة الطلب بشكل دوري.</li>
+      <li>التواصل مع الملحقية الثقافية للتنسيق حول مواعيد بداية البرنامج ومتطلبات الاستقبال.</li>
+    </ol>
+
+    <div class="section-title">ثانياً: ضوابط أثناء التدريب</div>
+    <ol>
+      <li>الالتزام بالحضور الكامل وإشعار المشرف الأكاديمي بأي غيابات أو انقطاعات اضطرارية.</li>
+      <li>رفع تقارير دورية عن التقدم الأكاديمي والمشاركات السريرية وفق النماذج المعتمدة.</li>
+      <li>المحافظة على سمعة المبتعث والالتزام بالأنظمة والقوانين في جهة التدريب.</li>
+    </ol>
+
+    <div class="section-title">ثالثاً: ما بعد انتهاء البرنامج</div>
+    <ol>
+      <li>تسليم تقرير ختامي معتمد من جهة التدريب يتضمن المهارات المكتسبة وفترة التطبيق.</li>
+      <li>تحديث بيانات المتدرب لدى الإدارة العامة للتدريب والابتعاث تمهيداً لمعادلة البرنامج.</li>
+      <li>العمل على نقل المعرفة للجهات الصحية داخل المملكة عبر ورش عمل أو تقارير متخصصة.</li>
+    </ol>
+
+    <div class="note">
+      تنفذ هذه التوجيهات بالتعاون بين وكالة التدريب والابتعاث والملحقيات الثقافية، وتشمل جميع البرامج الصحية المعتمدة داخل المملكة وخارجها.
+    </div>
+
+    <footer>
+      جميع الحقوق محفوظة &copy; وزارة الصحة &ndash; الإدارة العامة للتدريب والابتعاث.
+    </footer>
+  </section>
+</body>
+</html>
