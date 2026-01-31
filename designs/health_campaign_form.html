@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <title>نموذج طلب الموافقة للمشاركة بالأعمال التطوعية</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap');
+
+    :root {
+      --primary: #0a6c3a;
+      --secondary: #b38b2d;
+      --border: #cfd8dc;
+      --text-color: #1a1a1a;
+      --accent: #3f8e5b;
+      --light-bg: #f8fbf9;
+      font-size: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 4rem;
+      font-family: "Tajawal", "Segoe UI", Tahoma, Arial, sans-serif;
+      background: #f2f4f3;
+      color: var(--text-color);
+    }
+
+    .page {
+      background: #fff;
+      border: 1px solid #d0d7d4;
+      border-radius: 1.6rem;
+      padding: 4rem 5rem;
+      margin: 0 auto 4rem;
+      max-width: 900px;
+      box-shadow: 0 1.6rem 3.2rem rgba(10, 36, 26, 0.08);
+      position: relative;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 4rem;
+      text-align: center;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    header .crest {
+      width: 90px;
+      height: 90px;
+      border: 3px solid var(--primary);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    header .title-block span {
+      display: block;
+      font-size: 1.6rem;
+    }
+
+    header .title-block .entity {
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      margin: 0 0 3rem;
+      font-size: 2.6rem;
+      color: var(--primary);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: var(--accent);
+      margin: 3rem 0 1.4rem;
+    }
+
+    p, li {
+      font-size: 1.6rem;
+      line-height: 1.9;
+      margin: 0 0 1rem;
+    }
+
+    ul {
+      margin: 1rem 0 2rem;
+      padding: 0 2.4rem 0 0;
+    }
+
+    .note-box {
+      border: 1.5px solid var(--border);
+      border-radius: 1.2rem;
+      padding: 2rem;
+      background: var(--light-bg);
+      margin: 2rem 0 3rem;
+    }
+
+    .steps {
+      counter-reset: checklist;
+      list-style: none;
+      padding: 0;
+    }
+
+    .steps li {
+      position: relative;
+      padding-right: 5.2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .steps li::before {
+      counter-increment: checklist;
+      content: counter(checklist);
+      position: absolute;
+      top: 0.2rem;
+      right: 0;
+      width: 3.6rem;
+      height: 3.6rem;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2.4rem 0 3.6rem;
+      font-size: 1.6rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 1.4rem 1.6rem;
+      text-align: center;
+    }
+
+    th {
+      background: rgba(10, 108, 58, 0.08);
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .signature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2.4rem;
+      margin-top: 3rem;
+    }
+
+    .signature-box {
+      border: 1px dashed var(--accent);
+      border-radius: 1.2rem;
+      padding: 1.8rem;
+      min-height: 120px;
+    }
+
+    .signature-box span {
+      display: block;
+      font-size: 1.4rem;
+      color: #607d8b;
+      margin-top: 1rem;
+    }
+
+    footer {
+      border-top: 3px solid rgba(10, 108, 58, 0.1);
+      padding-top: 2rem;
+      margin-top: 4rem;
+      font-size: 1.4rem;
+      color: #607d8b;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+
+      .page {
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="page">
+    <header>
+      <div class="title-block">
+        <span>المملكة العربية السعودية</span>
+        <span class="entity">وزارة الصحة</span>
+        <span>وكالة الصحة العامة</span>
+        <span>الإدارة العامة لتعزيز الصحة</span>
+      </div>
+      <div class="crest">الصحة</div>
+      <div class="title-block">
+        <span>Kingdom of Saudi Arabia</span>
+        <span>Ministry of Health</span>
+        <span>Deputyship for Public Health</span>
+        <span>General Department of Health Promotion</span>
+      </div>
+    </header>
+
+    <h1>المحور الرابع &mdash; وثائق واجب إرفاقها للجهات الخاصة</h1>
+
+    <p>
+      يجب على الجهات الراغبة في المشاركة بحملات التوعية الصحية تقديم المستندات التالية مع نموذج طلب الموافقة
+      على الأعمال التطوعية. يساعد اكتمال الملف على تسهيل التنسيق مع وزارة الصحة وإصدار الموافقات اللازمة في أسرع وقت.
+    </p>
+
+    <h2>المستندات الأساسية المطلوبة</h2>
+    <ul class="steps">
+      <li>خطاب رسمي موجه لوزارة الصحة يتضمن نبذة عن الجهة، أهداف المشاركة، والفترة الزمنية المقترحة للحملة.</li>
+      <li>نسخة من السجل التجاري أو الترخيص الرسمي للجهة متى ما تطلب الأمر.</li>
+      <li>خطة تشغيلية تفصيلية تتضمن المواقع المستهدفة، الفئات المستفيدة، ووسائل التوعية المقترحة.</li>
+      <li>تعهد بالالتزام بالضوابط والإجراءات الصحية وإعادة المواد التوعوية بعد انتهاء الفعالية.</li>
+      <li>قائمة بأسماء فريق العمل والمتطوعين شاملاً بيانات التواصل والشهادات المتخصصة إن وجدت.</li>
+    </ul>
+
+    <div class="note-box">
+      <strong>ملاحظات هامة:</strong>
+      <ul>
+        <li>في حال الاستعانة بشريك من القطاع الصحي الخاص، يجب إرفاق خطاب عدم الممانعة من المنشأة.</li>
+        <li>تُرفق نسخة من خطاب موافقة المركز الصحي أو المستشفى المستضيف للحملة داخل المنشأة.</li>
+        <li>يمكن إرسال الملفات إلكترونياً بصيغة PDF على بريد الإدارة العامة لتعزيز الصحة.</li>
+      </ul>
+    </div>
+
+    <h2>بيانات الحملة المقترحة</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>اسم الحملة</th>
+          <th>الفترة الزمنية</th>
+          <th>الموقع</th>
+          <th>عدد المتطوعين</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>وسائل التواصل</h2>
+    <p>
+      البريد الإلكتروني: <strong>healthpromo@moh.gov.sa</strong><br />
+      هاتف التواصل: <strong>011-123-4567</strong>
+    </p>
+
+    <div class="signature-grid">
+      <div class="signature-box">
+        ممثل الجهة المتقدمة
+        <span>الاسم والتوقيع</span>
+      </div>
+      <div class="signature-box">
+        منسق وزارة الصحة
+        <span>الاسم والتوقيع</span>
+      </div>
+      <div class="signature-box">
+        مدير الإدارة العامة لتعزيز الصحة
+        <span>الاسم والتوقيع</span>
+      </div>
+    </div>
+
+    <footer>
+      <span>الإصدار: 01 / 1446هـ</span>
+      <span>تم إعداد هذا النموذج لتوحيد آلية استقبال طلبات المشاركة في الأعمال التطوعية.</span>
+    </footer>
+  </section>
+</body>
+</html>
